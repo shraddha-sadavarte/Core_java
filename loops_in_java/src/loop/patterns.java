@@ -65,5 +65,29 @@ public class patterns {
 	
 	System.out.println("=====================================");
 	
+	//inverted half pyramid (rotated by 180deg)
+	//if n=4
+//	   * 3space + 1star =>4 => spaces n-i and i=1 (4-1=3spaces)
+//	  ** 2space + 2star =>4 => spaces n-i and i=2 (4-2=2spaces)
+//	 *** 1space + 3star =>4 => spaces n-i and i=3 (4-3=1space)
+//	**** 0space + 4star =>4 => spaces n-i and i=4 (4-4=0spaces)
+	//first outer loop is for rows
+	//first inner loop is for space
+	//second inner loop is for * printing
+	
+	for (int i=1;i<=n;i++) {
+		//inner loop => space print
+		for(int j=1;j<=n-i;j++) {
+			System.out.print(" ");
+		}
+		
+		//inner loop => star print
+		for(int j=1;j<=i;j++) {
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	
+	
 	}
 }
