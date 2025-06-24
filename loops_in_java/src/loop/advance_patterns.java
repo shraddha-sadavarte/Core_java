@@ -25,11 +25,11 @@ public class advance_patterns {
 				System.out.print(" ");
 			}
 		
-		//2nd part
-		for(int j=1;j<=n;j++) {
-			System.out.print("*");
-		}
-		System.out.println();
+			//2nd part
+			for(int j=1;j<=i;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
 		
 		}
 		
@@ -46,13 +46,36 @@ public class advance_patterns {
 				System.out.print(" ");
 			}
 		
-		//2nd part
-		for(int j=1;j<=n;j++) {
-			System.out.print("*");
-		}
-		System.out.println();
+			//2nd part
+			for(int j=1;j<=i;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
 		
 		}
+		
+		System.out.println("===========================");
+		
+		//solid rhombus
+//		    *****
+//		   *****
+//		  *****
+//		 *****
+//		*****
+		int m=5;
+		for(int i=1;i<=m;i++) {
+			//spaces
+			for(int j=1;j<=m-i;j++) {
+				System.out.print(" ");
+			}
+			
+			//stars
+			for(int j=1;j<=m;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
 	}
 
 }
